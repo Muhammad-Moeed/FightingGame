@@ -1,0 +1,39 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+body {
+    background-image: url(assets/bg.gif);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover; 
+    height: 100vh;
+    
+}
+
+.player{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 30px;
+    height: 100vh;
+    align-items: center;
+    
+
+}
+
+.player1 img {
+    position: absolute; /* Enables 'left' property */
+    left: 0; 
+    bottom: 50px; 
+    height: 300px;
+    width: auto; 
+    margin-top: 10px;
+}
+
+.player2 img{
+    height: 300px;
+    width: 80%;
+    margin-top: 190px;
+}
+
+
