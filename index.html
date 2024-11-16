@@ -1,23 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Takken3 By M Moeed</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <div class="player">
-    <div class="player1">
-        <img id="player1" src="assets/player1/start.gif" alt="">
+    <!-- Start Screen  -->
+    <div id="startScreen" class="start-screen">
+        <button id="startBtn" class="btn">Start Game</button>
     </div>
-    <div class="player2">
-        <img id="player2" src="assets/player2/walk.gif" alt="">
-    </div>
-</div>
-    <script src="app.js"></script>
-</body>
 
+    <!-- Main Game Interface (Initially hidden) -->
+    <div class="game-container" id="gameContainer" style="display: none;">
+        <div class="player">
+            <div class="player1">
+                <img id="player1" src="assets/player1/start.gif" alt="">
+            </div>
+            <div class="player2">
+                <img id="player2" src="assets/player2/start.gif" alt="">
+            </div>
+        </div>
+
+        <!-- Button Intsruction -->
+        <div class="button-container">
+            <button id="player1Btn" class="btn">Player 1 Instructions</button>
+            <button id="player2Btn" class="btn">Player 2 Instructions</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
 </html>
