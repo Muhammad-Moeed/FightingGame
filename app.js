@@ -1,16 +1,16 @@
-const player1 = document.getElementById('player1');
-const player2 = document.getElementById('player2');
+var player1 = document.getElementById('player1');
+var player2 = document.getElementById('player2');
 
-const player1Btn = document.getElementById('player1Btn');
-const player2Btn = document.getElementById('player2Btn');
+var player1Btn = document.getElementById('player1Btn');
+var player2Btn = document.getElementById('player2Btn');
 
-let player1Position = 0;
-let player2Position = 720;
+var player1Position = 0;
+var player2Position = 720;
 
-const maxPositionPlayer1 = window.innerWidth - player1.offsetWidth;
-const maxPositionPlayer2 = window.innerWidth - player2.offsetWidth;
+var maxPositionPlayer1 = window.innerWidth - player1.offsetWidth;
+var maxPositionPlayer2 = window.innerWidth - player2.offsetWidth;
 
-// ******************Buttton Instruction Alerts ***************
+// *********GAME INSTRUCTION ALERTS*****************
 
 player1Btn.addEventListener('click', function () {
     Swal.fire({
@@ -40,10 +40,10 @@ player2Btn.addEventListener('click', function () {
     });
 });
 
-// *****************Player2****************
-
 document.addEventListener('keydown', function (event) {
-    const key = event.keyCode;
+    var key = event.keyCode;
+
+// *********PLAYER1 *****************
 
     if (key === 37) {
         player1.src = './assets/player1/start.gif';
@@ -73,7 +73,7 @@ document.addEventListener('keydown', function (event) {
         player1.style.width = 'auto';
     }
 
-    //   ****************Player 2 ********************
+// *********** PLAYER 2 *****************
 
     if (key === 65) {
         player2.src = './assets/player2/walk.gif';
@@ -104,7 +104,7 @@ document.addEventListener('keydown', function (event) {
     }
 });
 
-// **************Start Button Home ****************
+// ************START HOME SCREEN***************** 
 
 document.getElementById('startBtn').addEventListener('click', function () {
     document.getElementById('startScreen').style.display = 'none';
